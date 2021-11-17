@@ -35,7 +35,7 @@ public class VaccineSignUp extends JFrame {
 	
 	/*
 	 * checkboxes for conditionsPanel
-	 */
+	 *
 	private JCheckBox checkBox1 = new JCheckBox();
 	private JCheckBox checkBox2 = new JCheckBox();
 	private JCheckBox checkBox3 = new JCheckBox();
@@ -52,7 +52,7 @@ public class VaccineSignUp extends JFrame {
 	
 	/*
 	 * label for conditionsPanel
-	 */
+	 *
 	private JLabel healthCarePersonnel = new JLabel("Health Care Personnel");
 	private JLabel longTermCareResident = new JLabel("Long term care resident");
 	private JLabel age65OrOlder = new JLabel("Age 65 or older");
@@ -66,6 +66,11 @@ public class VaccineSignUp extends JFrame {
 	private JLabel age50PlusInMultiGenHousing = new JLabel("Age 50+ in multi-generational housing");
 	private JLabel age16PlusWithUnderlyingConditions = new JLabel("Age 16+ with underlying conditions");
 	private JLabel age50OrOlder = new JLabel("Age 50 or older");
+	*/
+	
+	/*
+	 * new conditions checkboxes
+	 */
 	
 	private JButton signMeUp = new JButton("Sign Me Up!");
 	
@@ -87,7 +92,7 @@ public class VaccineSignUp extends JFrame {
 		personalInfoPanel.setLayout(new GridLayout(10,2));
 		
 		JPanel conditionsPanel = new JPanel();
-		conditionsPanel.setLayout(new GridLayout(13,2));
+		conditionsPanel.setLayout(new GridLayout(13,1));
 		
 		JPanel bottomPanel = new JPanel(new BorderLayout());
 		
@@ -132,46 +137,20 @@ public class VaccineSignUp extends JFrame {
 		 */
 		conditionsPanel.setBorder(BorderFactory.createTitledBorder("Conditions"));
 		
-		//conditionsPanel.add(JCheckBoxMenuItem);
+		conditionsPanel.add(new Checkbox("Health Care Personnel"));
+		conditionsPanel.add(new Checkbox("Long term care resident"));
+		conditionsPanel.add(new Checkbox("Age 65 or older"));
+		conditionsPanel.add(new Checkbox("Pre-k to 12 educators"));
+		conditionsPanel.add(new Checkbox("Specific underlying conditions"));
+		conditionsPanel.add(new Checkbox("Targeted essential workers"));
+		conditionsPanel.add(new Checkbox("Rare conditions"));
+		conditionsPanel.add(new Checkbox("Age 45-64 with enderlying conditions"));
+		conditionsPanel.add(new Checkbox("Age 16-44 with 2+ underlying conditions"));
+		conditionsPanel.add(new Checkbox("Essential frontline workers"));
+		conditionsPanel.add(new Checkbox("Age 50+ in multi-generational housing"));
+		conditionsPanel.add(new Checkbox("Age 16+ with underlying conditions"));
+		conditionsPanel.add(new Checkbox("Age 50 or older"));
 		
-		conditionsPanel.add(checkBox1);
-		conditionsPanel.add(healthCarePersonnel);
-		
-		conditionsPanel.add(checkBox2);
-		conditionsPanel.add(longTermCareResident);
-		
-		conditionsPanel.add(checkBox3);
-		conditionsPanel.add(age65OrOlder);
-		
-		conditionsPanel.add(checkBox4);
-		conditionsPanel.add(preKTo12Educators);
-		
-		conditionsPanel.add(checkBox5);
-		conditionsPanel.add(specificUnderlyingConditions);
-		
-		conditionsPanel.add(checkBox6);
-		conditionsPanel.add(targetedEssentialWorkers);
-		
-		conditionsPanel.add(checkBox7);
-		conditionsPanel.add(rareConditions);
-		
-		conditionsPanel.add(checkBox8);
-		conditionsPanel.add(age4564WithUnderlyingConditions);
-		
-		conditionsPanel.add(checkBox9);
-		conditionsPanel.add(age1644with2PlusUnderlyingConditions);
-				
-		conditionsPanel.add(checkBox10);
-		conditionsPanel.add(essentialFrontlineWorkers);
-		
-		conditionsPanel.add(checkBox11);
-		conditionsPanel.add(age50PlusInMultiGenHousing);
-						
-		conditionsPanel.add(checkBox12);
-		conditionsPanel.add(age16PlusWithUnderlyingConditions);
-		
-		conditionsPanel.add(checkBox13);
-		conditionsPanel.add(age50OrOlder);
 		
 		bottomPanel.add(signMeUp, BorderLayout.SOUTH);
 		
