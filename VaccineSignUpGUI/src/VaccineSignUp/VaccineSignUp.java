@@ -5,7 +5,12 @@ import javax.swing.*;
 
 public class VaccineSignUp extends JFrame {
 	
-	/*
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
 	 * constructor
 	 */
 	public VaccineSignUp(String title) {
@@ -15,7 +20,7 @@ public class VaccineSignUp extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		
-		/*
+		/**
 		 * Panels
 		 */
 		JPanel personalInfoPanel = new JPanel();
@@ -26,7 +31,7 @@ public class VaccineSignUp extends JFrame {
 		
 		JPanel bottomPanel = new JPanel(new BorderLayout());
 		
-		/*
+		/**
 		 * personalInfo Panel
 		 */
 		personalInfoPanel.setBorder(BorderFactory.createTitledBorder("Personal Info"));
@@ -61,7 +66,7 @@ public class VaccineSignUp extends JFrame {
 		personalInfoPanel.add(new JLabel("Zip: "));
 		personalInfoPanel.add(new JTextField(14));
 		
-		/*
+		/**
 		 * conditionsPanel
 		 */
 		conditionsPanel.setBorder(BorderFactory.createTitledBorder("Conditions"));
@@ -81,12 +86,12 @@ public class VaccineSignUp extends JFrame {
 		conditionsPanel.add(new Checkbox("Age 16+ with underlying conditions"));
 		conditionsPanel.add(new Checkbox("Age 50 or older"));
 		
-		/*
+		/**
 		 * bottomePanel
 		 */
 		bottomPanel.add(new JButton("Sign Me Up!"), BorderLayout.SOUTH);
 		
-		/*
+		/**
 		 * Arranging each Panel
 		 */
 		add(personalInfoPanel, BorderLayout.WEST);
@@ -98,7 +103,7 @@ public class VaccineSignUp extends JFrame {
 		bottomPanel.revalidate();
 	}
 	
-	/*
+	/**
 	 * main method
 	 */
 	public static void main(String[] args) {
